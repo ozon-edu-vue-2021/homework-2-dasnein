@@ -1,7 +1,7 @@
 <template>
   <li class="tree__row">
     <tree-row-content
-      @click="onClick"
+      @click.stop="onClick"
       :data="data"
       :opened="isFolderOpened"
       :selected="isFileSelected"
